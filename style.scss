@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #bada55;
+}
+body {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inbox {
+    background-color: white;
+    width: 20%;
+
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.148);
+        input {
+            width: 50px;
+            width: 15%;
+        }
+        p {
+            width: 85%;
+            border-left: 1px solid #d1e2ff;
+        }
+    }
+    .item > * {
+        padding: 1em;
+    }
+}
+input:checked + p {
+    background: #f9f9f9;
+    text-decoration: line-through;
+}
